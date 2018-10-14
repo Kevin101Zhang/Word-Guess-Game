@@ -1,7 +1,7 @@
 var wordList = ["bulldog", "beagle", "yorkie", "poodle", "rottweiler","boxer","pomeranian","pug","collie","husky"];
 var wins = 0;
 var losses = 0;
-var guessleft = 10;
+var guessleft = 8;
 var emptyArray = [];
 var isAlphabet = function (check) {
     return /^[A-Z]$/i.test(check);
@@ -76,7 +76,7 @@ function newGame() {
             alert("Invalid Input, Try Again"); // Alert incase of Invalid Key //
         }
     }
-    guessleft = 10; // reset guess to 10 //
+    guessleft = 8; // reset guess to 8 //
     document.getElementById("guessesLeft").innerHTML = guessleft;
 }
 
