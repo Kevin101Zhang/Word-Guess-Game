@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Topic Word Guess Game</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+
+</head>
+
+<body>
+
+    <h1>Lets Start Playing Word Guess!</h1>
+    <p id="hint">Hint: Type of Dog</p>
+
+    <input id="clickMe" type="button" value="Click to Play / New Game" onclick="newGame();" />
+    <div class="container">
+        <!--Container for word-->
+        <h1 id="currentWord"></h1>
+    </div>
+
+
+    <div class="container2">
+        <!--Letters Used-->
+        <p>Already Guessed: <span id="guessSoFar"></span></p>
+        <h5 id="somethingbefore"></h5>
+    </div>
+
+    <p>Guess Left: <span id="guessesLeft"></span> </p>
+    <p>Total Wins: <span id="totalWins"></span></p>
+    <p>Total Losses: <span id="totalLosses"></span></p>
+
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

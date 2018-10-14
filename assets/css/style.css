@@ -1,0 +1,24 @@
+body {
+    font-family:"tangerine", serif;
+    font-size: 45px; 
+    background-image: url('https://www.ourdogsnanny.com/assets/tree-d925ef277860102603f55ba7f01c9d3a.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+#currentWord{
+text-shadow:  3px 3px navy;
+}
+#guessSoFar {
+    color: tomato;
+}
+#hint{
+    color: tomato;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
