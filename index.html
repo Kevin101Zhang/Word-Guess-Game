@@ -9,35 +9,50 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float">
+    <script defer src="assets/javascript/game.js"></script>
 </head>
 
 <body>
+    <div class="row container-fluid">
+        <div class="col-2">
+            <img class="img-fluid" id="FloatingDog" src="assets/images/FloatingDog.gif" alt="Floating Dog">
+            <img class="img-fluid" id="CheekyDog" src="assets/images/CheekyDog.gif" alt="Cheeky Dog">
+            <img class="img-fluid" id="BarkingDog" src="assets/images/BarkingDog.gif" alt="Barking Dog">
+            <img class="img-fluid" id="ThinkingDog" src="assets/images/ThinkingDog.gif" alt="Thinking Dog">
+        </div>
+        <div class="col-8">
+            <h1>Puppy Word Guess for Kids!</h1>
+            <p id="hint">Hint: Type of Puppy</p>
 
-    <h1>Lets Start Playing Word Guess!</h1>
-    <p id="hint">Hint: Type of Dog</p>
+            <p><input id="clickMe" type="button" value="Click to Play / New Game" onclick="newGame();" /></p>
+            <div class="C1">
+                <!--Container for word-->
+                <h1 id="currentWord"></h1>
+            </div>
 
-    <input id="clickMe" type="button" value="Click to Play / New Game" onclick="newGame();" />
-    <div class="container">
-        <!--Container for word-->
-        <h1 id="currentWord"></h1>
+
+            <div class="C2">
+                <!--Letters Used-->
+                <p>Already Guessed: <span id="guessSoFar"></span></p>
+                <h5 id="somethingbefore"></h5>
+            </div>
+
+            <p>Guess Left: <span id="guessesLeft"></span> </p>
+            <p>Total Wins: <span id="totalWins"></span></p>
+            <p>Total Losses: <span id="totalLosses"></span></p>
+        </div>
+        <div class="col-2">
+            <img class="img-fluid" id="WoofDog" src="assets/images/WoofDog.gif" alt="Woof Dog">
+            <img class="img-fluid" id="Animateddog" src="assets/images/AnimatedDog.gif" alt="Animated Dog">
+            <img class="img-fluid" id="BoxingDog" src="assets/images/BoxingDog.gif" alt="BoxingDog">
+            <img class="img-fluid" id="DerpDog" src="assets/images/DerpDog.gif" alt="Derp Dog">
+        </div>
     </div>
-
-
-    <div class="container2">
-        <!--Letters Used-->
-        <p>Already Guessed: <span id="guessSoFar"></span></p>
-        <h5 id="somethingbefore"></h5>
-    </div>
-
-    <p>Guess Left: <span id="guessesLeft"></span> </p>
-    <p>Total Wins: <span id="totalWins"></span></p>
-    <p>Total Losses: <span id="totalLosses"></span></p>
-
-
-    <script src="assets/javascript/game.js"></script>
+    <!-- <script src="assets/javascript/game.js"></script> -->
 </body>
 
 </html>

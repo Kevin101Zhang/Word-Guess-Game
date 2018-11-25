@@ -1,24 +1,37 @@
-body {
-    font-family:"tangerine", serif;
-    font-size: 45px; 
-    background-image: url('https://www.ourdogsnanny.com/assets/tree-d925ef277860102603f55ba7f01c9d3a.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: whitesmoke;
-    text-shadow: 2px 2px black;
+.row{
+    background-color: black;
+    color: white;
+    font-family: Rancho;
+}
+.col-2,.col-8,.row,.container-fluid{
+height: 100vh;
+}
+
+.col-8{
+background-image: url('../images/puppies.gif');
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+
+}
+
+h1{
     text-align: center;
-    margin: 0%;
-    padding: 0%;
-
+    font-size: 100px;
 }
-
+p{
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+}
+#clickMe{
+   border: 1px solid black;
+   border-radius: 15px;
+}
+#guessSoFar,#hint{
+    color: salmon;
+    font-size: 50px;
+}
 #currentWord{
-text-shadow:  3px 3px navy;
-}
-#guessSoFar {
-    color: tomato;
-}
-#hint{
-    color: tomato;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkred;
 }

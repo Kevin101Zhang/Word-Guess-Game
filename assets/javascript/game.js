@@ -36,6 +36,7 @@ function newGame() {
 
     }
 
+    // this is the benefit of getters and setters.
     // function for onclick //
     document.onkeyup = function (event) {
 
